@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Cropper Tool</title>
+  <link href="https://cdn.jsdelivr.net/npm/cropperjs@1.5.13/dist/cropper.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <!-- วิดีโอพื้นหลัง -->
+  <video class="background-video" autoplay muted loop>
+    <source src="http://127.0.0.1:5500/videos/Aurora.mp4" type="video/mp4">
+    เบราว์เซอร์ของคุณไม่รองรับแท็กวิดีโอ
+  </video>
+
+
+
+  <div class="container">
+    <h1 class="title">Image Cropper Tool</h1>
+
+    <div class="nav">
+      <a href="project.html" class="btn">Back to Home</a>
+      <a href="resize.html" class="btn">Go to Resizer</a>
+    </div>
+
+    <div class="upload-section">
+      <label for="inputImages" class="upload-label">Choose Images</label>
+      <input type="file" id="inputImages" accept="image/*" multiple>
+    </div>
+
+    <div id="previews"></div>
+
+    <button id="cropButton" class="btn">Crop Images</button>
+
+    <div class="output" id="cropoutput">
+      <!-- Download link will be dynamically added here -->
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.5.13/dist/cropper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="script.js"></script>
+   <!-- ลิ้งค์ไปยังไฟล์ JS -->
+</body>
+</html>
