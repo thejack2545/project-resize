@@ -89,7 +89,7 @@ document.getElementById('resizeButton').addEventListener('click', async function
 
     // สร้างลิงก์กลับไปหน้าหลัก
     const backToHomeLink = document.createElement('a');
-    backToHomeLink.href = 'project.html'; // ลิงก์ไปยังหน้าหลัก
+    backToHomeLink.href = 'index.html'; // ลิงก์ไปยังหน้าหลัก
     backToHomeLink.className = 'btn'; // กำหนดคลาส
     backToHomeLink.textContent = 'Back to Home';
     outputElement.appendChild(backToHomeLink); // แสดงลิงก์กลับหน้าหลัก

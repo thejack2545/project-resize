@@ -107,7 +107,7 @@ document.getElementById('cropButton').addEventListener('click', async function (
 
     // ปุ่มกลับไปที่หน้าแรก
     const backToHomeLink = document.createElement('a');
-    backToHomeLink.href = 'project.html';
+    backToHomeLink.href = 'index.html';
     backToHomeLink.className = 'btn'; // ใช้คลาสปุ่ม
     backToHomeLink.textContent = 'Back to Home';
     outputElement.appendChild(backToHomeLink);
